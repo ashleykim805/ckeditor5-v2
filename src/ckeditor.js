@@ -35,6 +35,8 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import S3Upload from 'ckeditor5-sss-upload/src/s3upload.js';
+
 
 class Editor extends ClassicEditor {}
 
@@ -71,7 +73,8 @@ Editor.builtinPlugins = [
 	Strikethrough,
 	TextTransformation,
 	TodoList,
-	Underline
+	Underline,
+  S3Upload
 ];
 
 export default Editor;
