@@ -35,6 +35,7 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 // import S3Upload from 'ckeditor5-sss-upload/src/s3upload.js';
+import SimpleUploadPlugin from 'ckeditor5-simple-upload/src/simpleupload.js'
 
 
 class Editor extends ClassicEditor {}
@@ -72,6 +73,7 @@ Editor.builtinPlugins = [
 	TextTransformation,
 	TodoList,
 	Underline,
+  SimpleUploadPlugin
   // S3Upload
 ];
 
