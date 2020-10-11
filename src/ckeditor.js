@@ -6,7 +6,8 @@ import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor.
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
-import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js';
+import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder.js';
+import CKFinderUploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor.js';
@@ -34,8 +35,6 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
-import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
-
 
 class Editor extends ClassicEditor {}
 
@@ -44,7 +43,8 @@ Editor.builtinPlugins = [
 	Alignment,
 	BlockQuote,
 	Bold,
-	UploadAdapter,
+	CKFinder,
+	CKFinderUploadAdapter,
 	Code,
 	Essentials,
 	FontBackgroundColor,
@@ -71,8 +71,7 @@ Editor.builtinPlugins = [
 	Strikethrough,
 	TextTransformation,
 	TodoList,
-	Underline,
-	CKFinder
+	Underline
 ];
 
 export default Editor;
